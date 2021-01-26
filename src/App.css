@@ -1,30 +1,95 @@
-.App {
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+.form-section {
   text-align: center;
+  width: 60vw;
+  height:25vh;
+  margin : 0 auto;
+  
+}
+.form-wrapper {
+  
+  text-align: center;
+  width: 30vw;
+  height:10vh;
+  margin : 200px auto;
+}
+.fish-wrapper{
+
+  margin-top:300px;
+}
+.app{
+  background : url(./aquaBG.jpg) repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-logo {
+  height: 50px;
+  animation: App-logo-spin infinite 20s linear;
+  
 }
 
+.fish-pic{
+  height:100px; 
+  width: 150px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+Input{
+  margin-bottom: 10px;
+}
+.app-header {
+  background-color: #282c35;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 100px;
+}
+.container{
+  background-color: aqua;
+}
+.app-header-text {
+  font-size : 16px;
 }
 
-.App-link {
+.app-shop {
+  padding : 1rem 1rem 3rem;
+  min-width: 30vh;
+
+  
+}
+
+.fish-container{
+max-height : 50vh;
+}
+
+
+@media(min-width: 800px){
+  .app-products{
+    display: flex;
+    justify-content: center;
+  }
+}
+.error {
+  font-family: "Roboto", sans-serif;
+  color: red;
+  border-style: solid;
+  border: 1px solid #ffa4a4;
+}
+
+.app-link {
   color: #61dafb;
 }
 
@@ -35,4 +100,103 @@
   to {
     transform: rotate(360deg);
   }
+}
+.form-paper{
+  width: 360px;
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 10px;
+
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  text-align: left;
+ 
+}
+.form-input {
+    margin: 10px 0 10px 0;
+    padding: 15px;
+    font-size: 32px;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+
+.fish-text{
+  
+  
+    padding: 5px;
+    font-size: 20px;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+  
+}
+.form-complete {
+  color: #7fdc45;
+  font-weight: 700;
+  text-align: center;
+}
+.divider{
+  margin-top: 5px;
+}
+.form-button {
+  display: inline-block;
+  margin: 0 0 1rem 0;
+  margin-bottom: 1rem;
+  padding: 0.85em 1em;
+  border: 0;
+  outline: 0;
+  border-radius: 100em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  background-color: #7fdc45;
+  color: #fff;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  -webkit-appearance: none;
+}
+.form-button:hover,
+.form-button:focus {
+  background-color: #68b637;
+}
+
+.form-button:disabled{
+  background-color: #ccc;
+}
+
+.form-error {
+  color: #dc4545;
+}
+
+.fish-remove-button {
+  display : inline-block;
+  margin : 0 0 1rem 0;
+  padding : 0.85em 1em;
+  border : 0;
+  outline : 0;
+  border-radius: 100em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  background-color: #61dafb;
+  color: #fff;
+  cursor: pointer;
+  transition-property: background-color color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  -webkit-appearance: none;
+}
+
+.fish-remove-button:hover,
+.fish-remove-button:focus{
+  background-color: #47d8b7;
 }

@@ -12,7 +12,11 @@ const Death = (props) => {
 	return visible ? (
 		<div>{props.children}</div>
 	) : (
-		<div> {props.name} has died</div>
+		<div>
+			{" "}
+			{props.name} has died
+			{props.children}
+		</div>
 	);
 };
 
